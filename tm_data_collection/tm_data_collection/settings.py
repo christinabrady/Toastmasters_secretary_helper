@@ -76,8 +76,12 @@ WSGI_APPLICATION = 'tm_data_collection.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'tmdb',
+        'USER': 'tm',
+        'PASSWORD': 'badasstm', 
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
@@ -87,7 +91,7 @@ DATABASES = {
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/New_York'
 
 USE_I18N = True
 
