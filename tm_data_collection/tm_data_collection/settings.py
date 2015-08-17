@@ -74,16 +74,7 @@ WSGI_APPLICATION = 'tm_data_collection.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'tmdb',
-        'USER': 'tm',
-        'PASSWORD': 'badasstm', 
-        'HOST': 'localhost',
-        'PORT': '5432',
-    }
-}
+
 
 
 # Internationalization
